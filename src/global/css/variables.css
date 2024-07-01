@@ -1,0 +1,35 @@
+:root {
+  /*Fonts do not like this one*/
+  --font-main: "PT Serif", serif;
+  --font-base-weight: 400;
+
+  /* Colors */
+  --black: #222222;
+  --slate-black: #424342; 
+  --white: #ffffff;
+  --off-white: #fffff4;
+  --grey: #f2f2f2;
+  --blue: #2b50aaff;
+  --pink: #ff9fe5ff;
+  --hotpink: #F82EC2;
+  --tea-green: #c6dec6ff;
+  --beige: #E4DFDA;
+
+  /*Embellishments*/
+  --box-shadow-pink: 3px 5px 1px var(--hotpink);
+
+  /*Transition*/
+  --hover-transition: 0.9s ease;
+
+  /* Containers */
+  --max-width-base: 1000px;
+  --max-width-sm: 800px;
+
+  --padding-base: 20px;
+
+  /*Readable*/
+  --width-readable: 80ch;
+
+  --readable-line-height: 1.5;
+ 
+}

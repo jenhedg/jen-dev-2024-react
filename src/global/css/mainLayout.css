@@ -1,0 +1,50 @@
+.page {
+ position: relative;
+}
+
+.page .main-content {
+  padding: 40px 20px;
+  padding: 12px;
+  background-color: var(--beige);
+}
+
+@media (min-width: 1024px){
+  .page .main-content {
+    padding: 40px 20px;
+  }
+
+  .page .page-inner {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-areas: 
+      "sidebar header"
+      "sidebar main"
+      "sidebar footer";
+  } 
+
+  .page .header {
+    grid-area: header;
+  
+  }
+
+  .page .sidebar {
+    grid-area: sidebar;
+  }
+
+   .page .footer {
+    grid-area: footer;
+  } 
+}
+
+
+/*Styles not layout */
+/* TODO: move to appropriate named file*/
+.page .link {
+  color: var(--red);
+  text-decoration: underline;
+  transition: color var(--hover-transition);
+}
+
+.page .link:hover {
+  color: var(--adobe);
+}
