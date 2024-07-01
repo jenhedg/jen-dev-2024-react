@@ -1,21 +1,16 @@
 .intro {
   position: relative;
-  border: 1px double black;
-  padding: 20px;
-  padding: 12px;
-  max-width: 80ch;
-  margin: 0 auto;
-  box-shadow: 3px 5px 1px var(--hotpink);
-  background-color: #fffff4;
-}
-
-.intro .intro-inner {
-  max-width: var(--max-width-sm);
+  max-width: 640px;
 }
 
 .intro .intro-title {
+  margin-bottom: 30px;
   font-size: 2rem;
-  line-height: var(--h1-line-height);
+  line-height: 1;
+}
+
+.intro .intro-content {
+  margin-bottom: 24px;
 }
 
 .intro .intro-content > p {
@@ -24,14 +19,30 @@
     font-weight: 400;
 }
 
-.intro .intro-content > p > .link {
-  color: var(--celadon);
+.intro .intro-content > ul {
+  margin-left: 16px;
+}
+
+.intro .intro-content :is(
+  p > .link, 
+  ul li a.link 
+) {
+  color: var(--black);
   font-weight: 600;
 }
 
 .intro .excite-list {
   list-style-type: none;
   padding: 0;
+}
+
+/* .intro .intro-content > p > .link:hover { */
+.intro .intro-content :is(
+  p > .link, 
+  ul li a.link
+):is(:hover) {
+  color: var(--hover-text-color);
+  transition: var(--hover-transition);
 }
 
 

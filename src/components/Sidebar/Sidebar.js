@@ -10,7 +10,7 @@ export default function Sidebar() {
       <nav className="nav">
         <ul className="navList">
           <li className="navList-item">/ Resume</li>
-          <li className="navList-item">/ About</li>
+          {/* <li className="navList-item">/ About</li> */}
           <li className="navList-item">/ Contact</li>
           <li className="navList-item">/ Plants!</li>
           {/* <li className="navList-item">/ LinkedIn</li>

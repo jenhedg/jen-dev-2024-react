@@ -4,7 +4,6 @@ export default function Footer() {
       <div className="footer-wrapper">
         <ul className="social">
           <li className="social-item"><a className="link" href="/">Codepen</a></li>
-          <li className="social-item"><a className="link" href="/">LinkedIn</a></li>
           <li className="social-item"><a className="link" href="/">Github</a></li>
         </ul>
         <div className="email">

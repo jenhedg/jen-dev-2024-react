@@ -5,12 +5,12 @@
 .page .main-content {
   padding: 40px 20px;
   padding: 12px;
-  background-color: var(--beige);
+  background-color: var(--grey);
 }
 
 @media (min-width: 1024px){
   .page .main-content {
-    padding: 40px 20px;
+    padding: 40px;
   }
 
   .page .page-inner {
@@ -34,17 +34,4 @@
    .page .footer {
     grid-area: footer;
   } 
-}
-
-
-/*Styles not layout */
-/* TODO: move to appropriate named file*/
-.page .link {
-  color: var(--red);
-  text-decoration: underline;
-  transition: color var(--hover-transition);
-}
-
-.page .link:hover {
-  color: var(--adobe);
 }

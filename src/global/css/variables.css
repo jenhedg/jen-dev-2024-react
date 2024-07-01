@@ -12,24 +12,18 @@
   --blue: #2b50aaff;
   --pink: #ff9fe5ff;
   --hotpink: #F82EC2;
+  --purple:	#6300A6;
   --tea-green: #c6dec6ff;
   --beige: #E4DFDA;
 
-  /*Embellishments*/
-  --box-shadow-pink: 3px 5px 1px var(--hotpink);
+  /* Hover Colors */
+  --hover-text-color: var(--purple);
 
   /*Transition*/
   --hover-transition: 0.9s ease;
 
   /* Containers */
-  --max-width-base: 1000px;
-  --max-width-sm: 800px;
-
+ 
   --padding-base: 20px;
 
-  /*Readable*/
-  --width-readable: 80ch;
-
-  --readable-line-height: 1.5;
- 
 }
