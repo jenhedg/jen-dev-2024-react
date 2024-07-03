@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "./Sidebar.css";
 
 
@@ -9,13 +10,11 @@ export default function Sidebar() {
       </div>
       <nav className="nav">
         <ul className="navList">
-          <li className="navList-item">/ Resume</li>
-          {/* <li className="navList-item">/ About</li> */}
+          <li className="navList-item">
+            <Link to="/resume">/ Resume</Link>
+          </li>
           <li className="navList-item">/ Contact</li>
           <li className="navList-item">/ Plants!</li>
-          {/* <li className="navList-item">/ LinkedIn</li>
-          <li className="navList-item">/ Github</li>
-          <li className="navList-item">/ Codepen</li> */}
         </ul>
       </nav>
     </div>

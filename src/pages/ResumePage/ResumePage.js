@@ -1,24 +1,18 @@
-// import Header from "../../components/Header/Header.js";
-import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Footer from '../../components/Footer/Footer.js';
-import Resume from '../../components/Resume/Resume.js';
-import Intro from "../../components/Intro/Intro.js";
+// import Resume from '../../components/Resume/Resume.js';
 
 import '../../global/css/variables.css';
 import '../../global/css/mainLayout.css';
-import './HomePage.css';
 import '../../components/Header/Header.css';
 import '../../components/Footer/Footer.css';
 
-const HomePage = () => {
+const resumePage = () => {
   return (
-    <div className=" page homePage">
+    <div className="resumePage page">
       <div className="page-inner">
-        {/* <Header /> */}
-        <Sidebar />
         <main className="main-content">
-          <Intro />
           {/* <Resume /> */}
+          <h1>resume page</h1>
         </main>
         <Footer />
       </div>
@@ -26,4 +20,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage;
+export default resumePage;
