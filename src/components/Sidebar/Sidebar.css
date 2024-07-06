@@ -42,6 +42,10 @@
     text-align: unset;
   }
   
+  .sidebar .logo-link {
+    text-decoration: none;
+  }
+  
   .sidebar .navList {
     flex-direction: column;
     align-items: flex-start;

@@ -6,7 +6,9 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="logo-wrap">
-        <h1 className="logo">jh<span className="logo-slash">/</span>dev ❤</h1>
+        <Link className="logo-link" to="/">
+          <h1 className="logo">jh<span className="logo-slash">/</span>dev ❤</h1>
+        </Link>
       </div>
       <nav className="nav">
         <ul className="navList">

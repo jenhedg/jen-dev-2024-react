@@ -14,8 +14,12 @@
   align-items: center;
 }
 
-.footer .social {
+.footer .links {
   display: inline-flex;
   justify-content: center;
   gap: 4px;
+}
+
+.footer .links li {
+  list-style-type: none;
 }

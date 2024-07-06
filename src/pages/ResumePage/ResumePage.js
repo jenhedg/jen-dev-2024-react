@@ -1,4 +1,5 @@
 import Footer from '../../components/Footer/Footer.js';
+import Sidebar from "../../components/Sidebar/Sidebar.js";
 // import Resume from '../../components/Resume/Resume.js';
 
 import '../../global/css/variables.css';
@@ -10,6 +11,7 @@ const resumePage = () => {
   return (
     <div className="resumePage page">
       <div className="page-inner">
+        <Sidebar />
         <main className="main-content">
           {/* <Resume /> */}
           <h1>resume page</h1>

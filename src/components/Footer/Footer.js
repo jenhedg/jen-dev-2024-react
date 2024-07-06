@@ -1,15 +1,26 @@
+import { Link } from 'react-router-dom';
+import "./Footer.css";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-wrapper">
-        <ul className="social">
-          <li className="social-item"><a className="link" href="/">Codepen</a></li>
-          <li className="social-item"><a className="link" href="/">Github</a></li>
+        <ul className="links">
+          <li>
+            <Link className="link" to="/">Codepen</Link>
+          </li>
+          <li>
+            <Link className="link" to="/">Github</Link>
+          </li>
+          <li>
+            <Link className="link" to="mailto: jennifernhf@gmail.com">
+              Email
+            </Link>
+          </li>
         </ul>
-        <div className="email">
-          <a className="link" href="mailto: jennifernhf@gmail.com">Email Me!</a>
+        <div className="footer-legal">
+          <p>&copy;2024 All materials. Jennifer Hedgcock</p>
         </div>
-        <p>&copy;2024 All materials. Jennifer Hedgcock</p>
       </div>
     </footer>
   );
