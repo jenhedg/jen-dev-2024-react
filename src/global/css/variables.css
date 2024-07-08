@@ -17,7 +17,8 @@
   --beige: #E4DFDA;
 
   /* Hover Colors */
-  --hover-text-color: var(--purple);
+  --hover-text-color-dark: var(--purple);
+  --hover-text-color-light: var(--mint-green);
 
   /*Transition*/
   --hover-transition: 0.9s ease;
