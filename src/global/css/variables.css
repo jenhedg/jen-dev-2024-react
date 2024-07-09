@@ -13,15 +13,16 @@
   --pink: #ff9fe5ff;
   --hotpink: #F82EC2;
   --purple:	#6300A6;
+  --light-purple: #8100D9;
   --tea-green: #c6dec6ff;
   --beige: #E4DFDA;
 
   /* Hover Colors */
   --hover-text-color-dark: var(--purple);
-  --hover-text-color-light: var(--mint-green);
+  --hover-text-color-light: var(--tea-green);
 
   /*Transition*/
-  --hover-transition: 0.9s ease;
+  --hover-transition: 0.34s ease-in;
 
   /* Containers */
  

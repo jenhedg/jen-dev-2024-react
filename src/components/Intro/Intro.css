@@ -21,6 +21,7 @@
 }
 
 .intro .intro-text {
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -53,7 +54,7 @@
   p > .link, 
   ul li a.link
 ):is(:hover) {
-  color: var(--hover-text-color-light);
+  color: var(--hover-text-color-dark);
   transition: var(--hover-transition);
 }
 

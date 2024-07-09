@@ -3,7 +3,7 @@
 }
 
 .page .main-content {
-  height: 100vh;
+  /* height: 100vh; */
   padding: 40px 20px;
   background-color: var(--grey);
 }

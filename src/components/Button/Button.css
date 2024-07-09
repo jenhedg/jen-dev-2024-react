@@ -10,5 +10,10 @@
   color: var(--white);
   background-color: var(--purple);
   border-radius: 3px;
-
 }
+
+.btn:hover {
+  background-color: var(--light-purple);
+  transition: background-color, var(--hover-transition);
+}
+

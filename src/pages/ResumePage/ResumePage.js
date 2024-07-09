@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer/Footer.js';
 import Sidebar from "../../components/Sidebar/Sidebar.js";
-// import Resume from '../../components/Resume/Resume.js';
+import Resume from '../../components/Resume/Resume.js';
 
 import '../../global/css/variables.css';
 import '../../global/css/mainLayout.css';
@@ -13,8 +13,7 @@ const resumePage = () => {
       <div className="page-inner">
         <Sidebar />
         <main className="main-content">
-          {/* <Resume /> */}
-          <h1>resume page</h1>
+          <Resume />
         </main>
         <Footer />
       </div>

@@ -1,9 +1,31 @@
 .resume {
   position: relative;
+  font-family: var(--font-main)
 }
 
-.resume-inner {
-    display: grid;
-    grid-template-columns: .25fr 1fr;
-    gap: 12px;
+.resume .resume-title {
+  font-size: 42px;
 }
+
+.resume .resume-intro {
+  margin-bottom: 32px;
+}
+
+.resume .position {
+  margin-bottom: 20px;
+}
+
+/* .resume .resume-intro .contact-list {
+  display: flex;
+  gap: 20px;
+} */
+
+.resume .resume-intro .contact-list li {
+  list-style-type: none;
+}
+
+.resume .resume-intro .contact-list li a {
+  text-decoration: none;
+}
+
+
