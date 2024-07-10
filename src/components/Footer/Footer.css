@@ -40,7 +40,6 @@
 }
 
 .footer .link:hover {
-  color: var(--hover-text-color-dark);
+  color: var(--light-purple);
   transition: var(--hover-transition);
 }
-

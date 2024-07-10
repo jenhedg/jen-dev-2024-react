@@ -1,7 +1,6 @@
 // import Header from "../../components/Header/Header.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Footer from '../../components/Footer/Footer.js';
-import Resume from '../../components/Resume/Resume.js';
 import Intro from "../../components/Intro/Intro.js";
 
 import '../../global/css/variables.css';

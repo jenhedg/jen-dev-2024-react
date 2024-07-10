@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faGithubAlt, faCodepen } from '@fortawesome/free-brands-svg-icons'
 
 import '../../global/css/variables.css';
 import '../../components/Header/Header.css';
@@ -11,9 +14,26 @@ export default function Resume() {
       <div className="resume-intro">
         <h2 className="resume-title">Jennifer Hedgcock</h2>
         <ul className="contact-list">
-          <li className="contact-item"><Link to="mailto:jennifernhf@gmail.com" target="_blank">Email Me</Link></li>
-          <li className="contact-item"><Link to="https://github.com/jenhedg" target="_blank">Github</Link></li>
-          <li className="contact-item"><Link to="https://codepen.io/sparkleOven" target="_blank">Codepen</Link></li>
+          <li className="contact-item">
+            <Link to="https://www.visittucson.org/" target="_blank">
+              <FontAwesomeIcon icon={faMapLocationDot} /> Tucson, Arizona
+            </Link>
+          </li>
+          <li className="contact-item">
+            <Link to="mailto:jennifernhf@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} /> Email
+            </Link>
+          </li>
+          <li className="contact-item">
+            <Link to="https://github.com/jenhedg" target="_blank">
+              <FontAwesomeIcon icon={faGithubAlt} /> Github
+            </Link>
+          </li>
+          <li className="contact-item">
+            <Link to="https://codepen.io/sparkleOven" target="_blank">
+              <FontAwesomeIcon icon={faCodepen} />Codepen
+            </Link>
+          </li>
         </ul>
       </div>
 
