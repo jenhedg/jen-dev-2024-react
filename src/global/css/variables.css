@@ -1,6 +1,6 @@
 :root {
   /*Fonts do not like this one*/
-  --font-main: "PT Serif", serif;
+  --font-main: "Inter", sans-serif;
   --font-base-weight: 400;
 
   /* Colors */
