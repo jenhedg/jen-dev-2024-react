@@ -10,10 +10,12 @@
   --off-white: #fffff4;
   --grey: #f2f2f2;
   --blue: #2b50aaff;
+  --dark-blue: #2b4b98;
   --pink: #ff9fe5ff;
   --hotpink: #F82EC2;
   --purple:	#6300A6;
   --light-purple: #8100D9;
+  --dark-purple: #7300c2;
   --tea-green: #c6dec6ff;
   --beige: #E4DFDA;
 
@@ -22,7 +24,9 @@
   --hover-text-color-light: var(--tea-green);
 
   /*Transition*/
-  --hover-transition: 0.34s ease-in;
+  --hover-transition: 0.3s ease-in;
+  --mobile-menu-transition: 0.23s ease;
+
 
   /* Containers */
  

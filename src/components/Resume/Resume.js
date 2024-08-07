@@ -13,6 +13,7 @@ export default function Resume() {
     <article className="resume">
       <div className="resume-header">
         <h2 className="resume-title">Jennifer Hedgcock</h2>
+        <h3 className="resume-subtitle">Front End Developer</h3>
         <ul className="contact-list">
           <li className="contact-item">
             <Link to="https://www.visittucson.org/" target="_blank">
@@ -43,12 +44,13 @@ export default function Resume() {
           <h4 className="resume-company"> Simpleview</h4>
           <p className="resume-dates"><i>December 2020 - present</i></p>
           <ul className="resp-list">
-            <li>Implement and maintain database-driven CMS product applications, APIs and database integration</li>
-            <li>Strategically plan and execute projects within allocated timelines and budget constraints</li>
-            <li>Complete work autonomously, collaborating as needed with teammates, lead developer, project manager and XD team.</li>
-            <li>Implement front-end designs and wireframes (Figma/Adobe XD/Photoshop) with pixel perfetion.</li>
+            <li>Implement and maintain data-driven CMS SaaS product applications</li>
+            <li>Build modular, performant, responsive web components with HTML, JS, CSS, Vue.js</li>
+            <li>Implement front-end designs and wireframes (Figma/Adobe XD/Photoshop) with pixel perfection.</li>
             <li>Contribute to maintainence and enhancement of CMS front-end framework via Git pull requests.</li>
             <li>Create and maintain documentation for system features and modules in Confluence.</li>
+            <li>Strategically plan and execute projects within allocated timelines and budget constraints</li>
+            <li>Complete work autonomously, collaborating as needed with teammates and product stakeholders.</li>
           </ul>
         </article>
         <article className="resume-role">

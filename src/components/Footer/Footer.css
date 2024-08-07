@@ -33,6 +33,7 @@
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  transition: var(--hover-transition);
 }
 
 .footer .footer-legal p {
@@ -41,5 +42,4 @@
 
 .footer .link:hover {
   color: var(--light-purple);
-  transition: var(--hover-transition);
 }

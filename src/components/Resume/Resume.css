@@ -27,24 +27,35 @@
 
 .resume .resume-header :is(
     .resume-title,
+    .resume-subtitle,
     .contact-list li a
   ){
-  color: var(--white);
+    color: var(--white);
 }
 
 .resume .resume-header {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
+.resume .resume-subtitle {
+  margin-bottom: 20px;
+}
+
 .resume .contact-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 8px;
   max-width: 500px;
 }
 
 .resume .contact-item {
   list-style-type: none;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -71,7 +82,7 @@
 }
 
 .resume .resume-title {
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1;
   font-weight: 500;
 }
@@ -85,7 +96,13 @@
 }
 
 .resume .resume-role {
+  max-width: 720px;
   margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: lightgrey;  
+  border: 2px solid var(--light-purple);
+  box-shadow: 3px 4px 0 var(--dark-purple);
 }
 
 .resume .resume-role h3,
@@ -98,7 +115,7 @@
 
 .resume .resume-role h4 {
   margin-bottom: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
@@ -121,7 +138,7 @@
   .resp-list,
   .education-list
 ) li {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -130,12 +147,33 @@
 }
 
 .resume .resume-intro .contact-list li a {
+  font-size: 14px;  
   text-decoration: none;
 }
 
 @media (min-width: 1024px){
   .resume .resume-inner {
     padding: 40px;
+  }
+
+  .resume .resume-header {
+    align-items: flex-start;
+  }
+
+  .resume .resume-title {
+  font-size: 42px;
+  }
+
+  .resume .resume-role h3, .resume .education h3 {
+    font-size: 32px;
+  }
+
+  .resume .resume-role h4 {
+    font-size: 18px;
+  }
+
+  .resume .resume-role .resume-dates {
+    font-size: 16px;
   }
 
   .resume :is(
@@ -145,6 +183,12 @@
     padding-left: 20px;
     font-size: 16px;
   }
+
+  .resume :is( .resp-list, .education-list ) li {
+    font-size: 16px;
+  }
+
+  .resume .contact-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-

@@ -53,9 +53,15 @@
 .intro .intro-content :is(
   p > .link, 
   ul li a.link
+) {
+  transition: var(--hover-transition);
+}
+
+.intro .intro-content :is(
+  p > .link, 
+  ul li a.link
 ):is(:hover) {
   color: var(--hover-text-color-dark);
-  transition: var(--hover-transition);
 }
 
 @media (min-width: 1024px){

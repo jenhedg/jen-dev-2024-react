@@ -1,67 +1,70 @@
 .sidebar {
-  position: relative;
-  box-shadow: 4px 0px 10px -3px rgba(173,173,173,1);
-  background-color: var(--black);
-}
-
-.sidebar .logo-wrap {
-  padding: 0;
-  text-align: center;
-}
-
-.sidebar .logo {
-    color: var(--pink);
-}
-
-.sidebar .logo .logo-slash {
-  font-size: 2.5rem;
-  color: var(--blue);
-}
-
-.sidebar .navList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    padding: 20px 50px 12px;
-    list-style-type: none;
-}
-
-.sidebar .navList-item,
-.sidebar .navList-item a {
-  color: var(--tea-green);
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
+  display: none;
 }
 
 @media (min-width: 1024px){
   .sidebar {
-    padding: 12px 20px;
-  }
-  
-  .sidebar .logo-wrap {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    text-align: unset;
-  }
-  
-  .sidebar .logo-link {
-    text-decoration: none;
-  }
-  
-  .sidebar .navList {
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    position: relative;
+    box-shadow: 4px 0px 10px -3px rgba(173,173,173,1);
+    background-color: var(--black);
   }
 
-  .navList {
+  .sidebar .logo-wrap {
+    padding: 0;
+    text-align: center;
+  }
+
+  .sidebar .logo {
+      color: var(--pink);
+  }
+
+  .sidebar .logo .logo-slash {
+    font-size: 2.5rem;
+    color: var(--blue);
+  }
+
+  .sidebar .navList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 20px 50px 12px;
+      list-style-type: none;
+  }
+
+  .sidebar .navList-item,
+  .sidebar .navList-item a {
+    color: var(--tea-green);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  @media (min-width: 1024px){
+    .sidebar {
+      padding: 12px 20px;
+    }
+    
+    .sidebar .logo-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      text-align: unset;
+    }
+    
+    .sidebar .logo-link {
+      text-decoration: none;
+    }
+    
+    .sidebar .navList {
       flex-direction: column;
       align-items: flex-start;
-  }
-  .sidebar :is(.navList-item, .navList-item a) {
-    font-size: 1.25rem;
+    }
+
+    .sidebar :is(.navList-item, .navList-item a) {
+      font-size: 1.25rem;
+    }
   }
 }
