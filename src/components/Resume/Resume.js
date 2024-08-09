@@ -96,11 +96,12 @@ export default function Resume() {
         <article className="education">
           <h3 className="education-title">Education</h3>
           <ul className="education-list">
-            <li> AA, Web Development & Design, 2015 - MiraCosta College</li>
-            <li>BA, Latin American Studies & Political Science, 2007 - The University of Arizona</li>
+            <li className='education-item'><span>AI Developer Certification</span> -<span className="education-institution"> IBM</span>, In progress</li>
+            <li className='education-item'><span>AA, Web Development & Design</span> -<span className="education-institution"> MiraCosta College</span>, 2015 </li>
+            <li className='education-item'><span>BA, Latin American Studies & Political Science</span> - <span className="education-institution"> The University of Arizona</span>, 2007</li>
           </ul>
         </article>
       </div>
-    </article >
+    </article>
   );
 }

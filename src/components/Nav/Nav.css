@@ -1,8 +1,9 @@
 .nav {
   display: block;
-  padding: 12px 20px; 
+  padding: 12px 20px;
   background-color: var(--beige);
   border-bottom: 6px solid var(--dark-purple);
+  z-index: 11;
 }
 
 .nav .nav-list {
@@ -12,6 +13,7 @@
   width: 100vw;
   transform: translate(100%, 18px);
   transition: var(--mobile-menu-transition);
+  z-index: 10;
 }
 
 .nav.active .nav-list {
@@ -21,17 +23,18 @@
   align-items: center;
   gap: 20px;
   position: absolute;
+  padding-top: 20px;
   transform: translate(-20px, 18px);
-  z-index: 1;
-} 
+}
+
 .nav .nav-list :is(li, li a) {
-  font-size: 34px;  
+  font-size: 34px;
   color: var(--white);
   list-style-type: none;
   text-decoration: none;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .nav {
     display: none;
   }

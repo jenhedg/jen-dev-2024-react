@@ -1,4 +1,5 @@
 import Footer from '../../components/Footer/Footer.js';
+import Nav from '../../components/Nav/Nav.js'
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Resume from '../../components/Resume/Resume.js';
 
@@ -12,6 +13,7 @@ const resumePage = () => {
   return (
     <div className="resumePage page">
       <div className="page-inner">
+        <Nav />
         <Sidebar />
         <main className="main-content">
           <Resume />

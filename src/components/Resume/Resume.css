@@ -1,119 +1,147 @@
-.resume {
+.resume
+{
   font-family: var(--font-main)
 }
 
-.resume-inner {
+.resume-inner
+{
   background-color: var(--beige);
 }
 
-.resumePage .main-content {
+.resumePage .main-content
+{
   padding: 0;
 }
 
-.resume :is(
-  .resume-title,
+.resume :is(.resume-title,
   .resume-role,
   .resp-list,
-  .education-title
-) {
+  .education-title)
+{
   color: var(--black)
 }
 
-.resume .resume-header {
+.resume .resume-header
+{
   padding: 20px;
   background-color: var(--black);
   border-bottom: 2px double var(--hotpink);
 }
 
-.resume .resume-header :is(
-    .resume-title,
-    .resume-subtitle,
-    .contact-list li a
-  ){
-    color: var(--white);
+.resume .resume-header :is(.resume-title,
+  .resume-subtitle,
+  .contact-list li a)
+{
+  color: var(--white);
 }
 
-.resume .resume-header {
+.resume .resume-header
+{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
 }
 
-.resume .resume-subtitle {
+.resume .resume-subtitle
+{
   margin-bottom: 20px;
 }
 
-.resume .contact-list {
+.resume .contact-list
+{
   display: grid;
   column-gap: 20px;
   row-gap: 8px;
   max-width: 500px;
 }
 
-.resume .contact-item {
+.resume .contact-item
+{
   list-style-type: none;
   font-size: 14px;
   font-weight: 500;
 }
 
-.resume .contact-item:nth-child(3) {
+.resume .contact-item:nth-child(3)
+{
   grid-column: 1;
   grid-row: 2;
 }
 
-.resume .contact-item:nth-child(4) {
+.resume .contact-item:nth-child(4)
+{
   grid-column: 2;
   grid-row: 2;
 }
 
-.resume .contact-item a {
+.resume .contact-item a
+{
   display: inline-flex;
   gap: 8px;
   text-decoration: none;
 }
 
-.resume .contact-item svg {
+.resume .contact-item svg
+{
   margin-right: 4px;
   color: var(--pink);
   font-size: 18px;
 }
 
-.resume .resume-title {
+.resume .resume-title
+{
   font-size: 32px;
   line-height: 1;
   font-weight: 500;
 }
 
-.resume .resume-intro {
+.resume .resume-intro
+{
   margin-bottom: 32px;
 }
 
-.resume .resume-inner {
+.resume .resume-inner
+{
   padding: 20px;
 }
 
-.resume .resume-role {
+.resume :is(.resume-role, .education)
+{
   max-width: 720px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 6px;
-  background-color: lightgrey;  
+  background-color: lightgrey;
   border: 2px solid var(--light-purple);
   box-shadow: 3px 4px 0 var(--dark-purple);
 }
 
+.resume :is(.resume-role)
+{
+  border: 2px solid var(--light-purple);
+  box-shadow: 3px 4px 0 var(--dark-purple);
+}
+
+.resume :is(.education)
+{
+  border: 2px solid var(--dark-blue);
+  box-shadow: 3px 4px 0 var(--dark-blue);
+}
+
 .resume .resume-role h3,
-.resume .education h3 {
+.resume .education h3
+{
   margin-bottom: 6px;
   font-size: 22px;
   font-weight: 800;
   line-height: 1;
 }
 
-.resume .resume-role h4 {
+.resume .resume-role h4
+{
   margin-bottom: 4px;
   font-size: 14px;
   font-weight: 700;
@@ -121,74 +149,100 @@
   text-transform: uppercase;
 }
 
-.resume .resume-role .resume-dates {
+.resume .resume-role .resume-dates
+{
   margin-bottom: 12px;
   font-size: 15px;
   font-weight: 400;
 }
 
-.resume :is(
-  .resp-list,
-  .education-list
-) {
+.resume :is(.resp-list,
+  .education-list)
+{
   padding-left: 14px;
 }
 
-.resume :is(
-  .resp-list,
-  .education-list
-) li {
+.resume :is(.resp-list,
+  .education-list) li
+{
   font-size: 14px;
   font-weight: 300;
 }
 
-.resume .resume-intro .contact-list li {
+.resume .resume-intro .contact-list li
+{
   list-style-type: none;
 }
 
-.resume .resume-intro .contact-list li a {
-  font-size: 14px;  
+.resume .resume-intro .contact-list li a
+{
+  font-size: 14px;
   text-decoration: none;
 }
 
-@media (min-width: 1024px){
-  .resume .resume-inner {
+.resume .education .education-item
+{
+  font-weight: 400;
+}
+
+.resume .education .education-item > span
+{
+  font-weight: 600;
+}
+
+.resume .education .education-item .education-institution
+{
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px)
+{
+  .resume .resume-inner
+  {
     padding: 40px;
   }
 
-  .resume .resume-header {
+  .resume .resume-header
+  {
     align-items: flex-start;
   }
 
-  .resume .resume-title {
-  font-size: 42px;
+  .resume .resume-title
+  {
+    font-size: 42px;
   }
 
-  .resume .resume-role h3, .resume .education h3 {
+  .resume .resume-role h3,
+  .resume .education h3
+  {
     font-size: 32px;
   }
 
-  .resume .resume-role h4 {
+  .resume .resume-role h4
+  {
     font-size: 18px;
   }
 
-  .resume .resume-role .resume-dates {
+  .resume .resume-role .resume-dates
+  {
     font-size: 16px;
   }
 
-  .resume :is(
-  .resp-list,
-  .education-list
-  ) {
+  .resume :is(.resp-list,
+    .education-list)
+  {
     padding-left: 20px;
     font-size: 16px;
   }
 
-  .resume :is( .resp-list, .education-list ) li {
+  .resume :is(.resp-list, .education-list) li
+  {
     font-size: 16px;
   }
 
-  .resume .contact-list {
+  .resume .contact-list
+  {
     grid-template-columns: repeat(2, 1fr);
   }
 }
