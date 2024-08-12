@@ -4,18 +4,18 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import "./Nav.css";
+import "./MobileNav.css";
 
 
 export default function Nav() {
-  const [navMobileActiveClass, setNavMobileActiveClass] = useState('nav')
+  const [navMobileActiveClass, setNavMobileActiveClass] = useState('mobile-nav')
   const [burgerActiveClass, setBurgerActiveClass] = useState('burger')
 
   const toggleNavMobileActiveClass = () => {
-    if (navMobileActiveClass === "nav") {
-      setNavMobileActiveClass("nav active")
+    if (navMobileActiveClass === "mobile-nav") {
+      setNavMobileActiveClass("mobile-nav active")
     } else {
-      setNavMobileActiveClass("nav")
+      setNavMobileActiveClass("mobile-nav")
     }
   }
 
@@ -29,7 +29,7 @@ export default function Nav() {
 
   return (
     <div
-      onClick={() => { toggleNavMobileActiveClass() }}
+      onClick={() => {toggleNavMobileActiveClass() }}
       className={navMobileActiveClass}
     >
       <button

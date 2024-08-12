@@ -1,4 +1,4 @@
-import Nav from '../../components/Nav/Nav.js'
+import MobileNav from '../../components/MobileNav/MobileNav.js'
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Footer from '../../components/Footer/Footer.js';
 import Intro from "../../components/Intro/Intro.js";
@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <div className=" page homePage">
       <div className="page-inner">
-        <Nav />
+        <MobileNav />
         <Sidebar />
         <main className="main-content">
           <Intro />

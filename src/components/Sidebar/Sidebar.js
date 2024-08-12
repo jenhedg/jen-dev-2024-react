@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Nav from '../../components/Nav/Nav.js'
+import DeskNav from '../DeskNav/DeskNav.js'
 
 import "./Sidebar.css";
 
@@ -11,7 +11,7 @@ export default function Sidebar() {
           <h1 className="logo">jh<span className="logo-slash">/</span>dev ❤</h1>
         </Link>
       </div>
-      <Nav />
+      <DeskNav />
     </div>
   );
 }
