@@ -1,0 +1,33 @@
+.sidebar .logo-wrap {
+  padding: 0;
+  text-align: center;
+}
+
+.logo-wrap .logo-link {
+  text-decoration: none;
+}
+
+.logo .logo-slash {
+  font-size: 2.5rem;
+} 
+
+@media (min-width: 1024px){
+  .logo-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    text-align: unset;
+  }
+    
+  .logo-link {
+    text-decoration: none;
+  }
+
+  .logo {
+      color: var(--pink);
+  }
+    
+  .logo .logo-slash {
+      color: var(--blue);
+  } 
+}

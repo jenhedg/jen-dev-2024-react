@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../Logo/Logo.js'
 
 import "./MobileNav.css";
+import "../Logo/Logo.css";
 
 
 export default function Nav() {
@@ -38,6 +40,7 @@ export default function Nav() {
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
+      <Logo/>
       <ul className="nav-list">
         <li className="navList-item">
           <Link to="/resume">/ Resume</Link>

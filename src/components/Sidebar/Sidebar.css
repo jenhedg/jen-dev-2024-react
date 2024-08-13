@@ -10,20 +10,6 @@
     background-color: var(--black);
   }
 
-  .sidebar .logo-wrap {
-    padding: 0;
-    text-align: center;
-  }
-
-  .sidebar .logo {
-      color: var(--pink);
-  }
-
-  .sidebar .logo .logo-slash {
-    font-size: 2.5rem;
-    color: var(--blue);
-  }
-
   .sidebar .navList {
       display: flex;
       flex-wrap: wrap;
@@ -45,17 +31,6 @@
   @media (min-width: 1024px){
     .sidebar {
       padding: 12px 20px;
-    }
-    
-    .sidebar .logo-wrap {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      text-align: unset;
-    }
-    
-    .sidebar .logo-link {
-      text-decoration: none;
     }
     
     .sidebar .navList {
