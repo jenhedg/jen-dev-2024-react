@@ -11,9 +11,14 @@
 .mobile-nav .burger {
   height: 40px;
   width: 40px;
+  padding: 0;
+  font-size: 32px;
+  color: var(--purple);
+  background-color: var(--beige);
+  border: 0;
 }
 
-.mobile-nav .nav-list {
+.mobile-nav .nav {
   display: none;
   background-color: var(--dark-purple);
   height: 100vh;
@@ -23,7 +28,7 @@
   z-index: 10;
 }
 
-.mobile-nav.active .nav-list {
+.mobile-nav.active .nav {
   position: absolute;
   top: 90px;
   left: 0;
@@ -34,10 +39,10 @@
   gap: 20px;
   position: absolute;
   padding-top: 20px;
-  transform: translate(0, 0);
+  transform: translate(0, -20px);
 }
 
-.mobile-nav .nav-list :is(li, li a) {
+.mobile-nav .nav :is(li, li a) {
   font-size: 34px;
   color: var(--white);
   list-style-type: none;

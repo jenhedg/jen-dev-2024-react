@@ -1,5 +1,5 @@
 import Logo from '../Logo/Logo.js'
-import DeskNav from '../DeskNav/DeskNav.js'
+import Nav from '../Nav/Nav.js';
 
 import "./Sidebar.css";
 
@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <Logo/>
-      <DeskNav />
+      <Nav />
     </div>
   );
 }

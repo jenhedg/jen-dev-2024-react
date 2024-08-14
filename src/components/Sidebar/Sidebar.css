@@ -6,11 +6,12 @@
   .sidebar {
     display: block;
     position: relative;
+    padding: 12px 60px;
     box-shadow: 4px 0px 10px -3px rgba(173,173,173,1);
     background-color: var(--black);
   }
 
-  .sidebar .navList {
+  .sidebar .nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -20,26 +21,12 @@
       list-style-type: none;
   }
 
-  .sidebar .navList-item,
-  .sidebar .navList-item a {
+  .sidebar .nav .nav-item,
+  .sidebar .nav .nav-item a {
     color: var(--tea-green);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
   }
-
-  @media (min-width: 1024px){
-    .sidebar {
-      padding: 12px 20px;
-    }
-    
-    .sidebar .navList {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .sidebar :is(.navList-item, .navList-item a) {
-      font-size: 1.25rem;
-    }
-  }
+ 
 }
